@@ -50,7 +50,9 @@ sysinfo.txt
 results/
 summaries/
 models/
-*.onnx.meta
+
+# ML-Agents auto-generated profiling timers (regenerate on each run)
+Assets/ML-Agents/Timers/
 
 # Training checkpoints (optional - include if you want to share)
 # results/

@@ -82,9 +82,12 @@ MonoBehaviour:
   spawnInterval: 2
   pipeSpeed: 2
   despawnX: -12
-  minY: -3
-  maxY: 3
+  gapSize: 2.5
+  minGapY: -2
+  maxGapY: 2
   spawnX: 10
+  ceilingY: 4.5
+  groundY: -4.5
 --- !u!1 &3863366706395032263
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,9 +259,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 8798e9c7354dce84e96cf27752b30678, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 1
+  m_BehaviorType: 0
   m_BehaviorName: FlappyBall
   TeamId: 0
   m_UseChildSensors: 0
