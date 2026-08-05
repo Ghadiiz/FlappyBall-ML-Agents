@@ -2,10 +2,7 @@
 
 A Flappy Bird–style environment in which a ball-shaped agent learns to fly through gaps in procedurally generated pipes using **Unity ML-Agents** and **Proximal Policy Optimization (PPO)**. The agent perceives its surroundings through raycast "vision" and learns entirely from trial and error — no scripted behavior.
 
-<!-- DEMO GIF PLACEHOLDER -->
-<!-- Replace the line below with the recorded demo once available: -->
-<!-- ![Trained agent playing](docs/demo.gif) -->
-> _Demo GIF coming soon — a short clip of the trained agent (FlappyBall3) clearing pipes._
+![Trained agent playing](docs/demo.gif)
 
 ---
 
@@ -73,6 +70,7 @@ Three configurations were trained with PPO to ~300,000 steps each. All results b
 
 - All three runs were **still improving** at their step limits — none had fully converged. Longer training would likely yield further gains. The numbers above are relative comparisons at a fixed step budget, not performance ceilings.
 - The reward curves are **noisy** (large episode-to-episode variance), which is expected for a sparse-ish reward in a stochastic environment. The smoothed trends, not individual points, are the meaningful signal.
+- In inference, the featured model (FlappyBall3) typically clears roughly 20–25 pipes per episode before failing (observed over several runs).
 
 ### Training curves
 
